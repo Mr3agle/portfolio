@@ -1,0 +1,98 @@
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Yeseva One', cursive;
+font-family: 'Archivo Black', sans-serif;
+*/
+header {
+   background: white;
+   width: 100%;
+   /* margin: 1rem 5rem 1rem; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   z-index: 1000;
+   top: 0;
+}
+
+.header-wrapper {
+   width: 90%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 10px 0px 10px;
+}
+
+.fa-bars {
+   font-size: 2rem;
+   color: #231F20;
+   cursor: pointer;
+}
+
+#edLogo {
+   width: 150px;
+   height: auto;
+}
+
+.round-menu {
+   position: fixed;
+   width: 0;
+   height: 0;
+   border-top-left-radius: 50%;
+   border-top-right-radius: 10%;
+   border-bottom-left-radius: 50%;
+   border-bottom-right-radius: 10%;
+   background: white;
+   top: -25%;
+   right: -15%;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: rgba(0, 0, 0, 0.4) -10px 0px 50px;
+   z-index: 1000;
+   /* display: none; */
+   transition: all ease-in-out .5s;
+   -moz-transition: all ease-in-out .5s;
+   -webkit-transition: all ease-in-out .5s;
+}
+
+
+.menu-item {
+   font-size: 9rem;
+   /* background: coral; */
+   font-family: 'Archivo Black', sans-serif;
+   text-decoration: none;
+}
+
+.menu-items {
+   margin-right: 200px;
+   overflow: hidden;
+   visibility: hidden;
+   opacity: 0;
+   transition: all ease-in-out .5s;
+   -moz-transition: all ease-in-out .5s;
+   -webkit-transition: all ease-in-out .5s;
+}
+
+.menu-item:hover {
+   text-decoration: underline #FFDB06;
+}
+
+.close-menu {
+   position: fixed;
+   top: 50px;
+   right: 50px;
+   cursor: pointer;
+   visibility: hidden;
+   opacity: 0;
+   transition: all ease-in-out .5s;
+   -moz-transition: all ease-in-out .5s;
+   -webkit-transition: all ease-in-out .5s;
+}
+
+.close-menu i {
+   font-size: 3rem;
+   color: #231F20;
+}
