@@ -1,11 +1,12 @@
+/***************** REQUIRES *******************/
 const createError = require('http-errors');
 const express = require("express");
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const mongoose = require('mongoose');
-require('dotenv').config();
+require('./app_server/models/db')
 
+/*************** MIDDLEWARES ******************/
 const usersRouter = require('./app_server/routes/users');
 const router = require('./app_server/routes/routes');
 const apirouter = require('./api/routes/routes');
@@ -24,7 +25,7 @@ app.use(express.urlencoded({
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//Middlewares
+//Route - Middlewares
 app.use('/', router);
 app.use('/api', apirouter);
 app.use('/users', usersRouter);
@@ -33,16 +34,6 @@ app.use('/users', usersRouter);
 app.use((req, res, next) => {
   next(createError(404));
 });
-
-//Connect to db
-mongoose.connect(process.env.DB_CONNECTION, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
-
-const db = mongoose.connection;
-db.on('error', (error) => console.error(error)); //Connection error
-db.once('open', () => console.log('connected to database')); //Connected 
 
 // error handler
 app.use((err, req, res, next) => {
