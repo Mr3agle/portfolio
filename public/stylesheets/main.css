@@ -5,199 +5,75 @@ font-family: 'Yeseva One', cursive;
 font-family: 'Archivo Black', sans-serif;
 */
 * {
-   margin: 0;
-   padding: 0;
-   color: #231F20;
+	margin: 0;
+	padding: 0;
+	color: #231f20;
 }
 
-.panorama {
-   padding-top: 500px;
-   width: 100%;
-   /* height: 200vh; */
-   background: #003CFF;
-   display: flex;
-   flex-flow: column;
-   justify-content: center;
-   align-items: center;
-}
-
-.mountain-main {
-   width: calc(100vw/1.3);
-   padding: 0;
-   /* position: absolute; */
-   /* transform: translateY(500px); */
-   /* background: #000; */
-}
-
-.saluto {
-   font-family: 'Montserrat', sans-serif;
-   position: absolute;
-   transform: translateX(calc(100vw/5)) translateY(-400px);
-   text-align: center;
-   font-weight: bolder;
-   font-size: 5rem;
-}
-
-.saluto h3 {
-   font-size: 4rem;
-}
-
-.mountain-main img {
-   width: 100%;
-   /* overflow: hidden; */
-}
-
-.about-main {
-   width: 100%;
-   overflow: hidden;
-   margin-bottom: 5rem;
-}
-
-.about-title h1 {
-   color: white;
-   position: absolute;
-   top: 200px;
-   left: 100px;
-   font-size: 8rem;
-   font-family: 'Archivo Black', sans-serif;
-   text-decoration: underline #FFDB06;
-}
-
-.container {
-   width: 100%;
-   height: calc(100vh - 180px);
-   margin-top: 100px;
-}
-
-.container h1 {
-   font-family: 'Archivo Black', sans-serif;
-}
-
-.heading-title-light {
-   color: #231F20;
-   margin-top: 200px;
-   margin-left: 100px;
-   font-size: 5rem;
-   font-family: 'Archivo Black',
-      sans-serif;
-   text-decoration: underline #FFDB06;
-}
-
-.history1 h2,
-.history2 h2,
-.history3 h2,
-.history4 h2,
-.history5 h2 {
-   font-family: 'Archivo Black', sans-serif;
-   font-size: 3rem;
-   color: white;
-   z-index: 100;
-}
-
-.history1 h2 {
-   position: absolute;
-   top: 720px;
-   left: 400px;
-}
-
-.history2 h2 {
-   position: absolute;
-   top: 1300px;
-   left: 400px;
-}
-
-.history3 h2 {
-   position: absolute;
-   top: 1675px;
-   left: 400px;
-}
-
-.history4 h2 {
-   position: absolute;
-   top: 2475px;
-   left: 400px;
-}
-
-.history5 h1 {
-   font-family: 'Montserrat', sans-serif;
-   position: absolute;
-   top: 3375px;
-   left: 500px;
-   font-size: 7rem;
-   color: white;
-   text-align: center;
-}
-
-.latest-projects {
-   width: 100%;
-   height: 100vh;
-}
-
-
-/*/FOOTER/*/
-
+/*FOOTER*/
 footer {
-   position: relative;
-   bottom: 0;
-   color: white;
-   width: 100%;
-   height: 80px;
-   background: #003CFF;
-   font-family: 'Montserrat', sans-serif;
-   /* font-weight: bold; */
-   font-size: 1.1rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+	position: relative;
+	bottom: 0;
+	color: white;
+	width: 100%;
+	background: #003cff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 1.1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 }
 
 footer p,
 i {
-   color: white;
+	color: white;
 }
 
 #coffee {
-   text-decoration: none;
-   color: white;
+	text-decoration: none;
+	color: white;
+	transition: all ease-in-out .3s;
 }
-
-.footer-wrapper {
-   width: 95%;
-   display: flex;
-   justify-content: space-between;
-   /* background: purple; */
-}
-
+/* #coffee:hover {
+	color: #ffdb06;
+} */
 .underlines {
-   display: flex;
-   margin-top: 5px;
+	display: flex;
+	margin-top: 5px;
 }
 
 #underline {
-   width: 95px;
-   height: 5px;
-   background: white;
+	width: 95px;
+	height: 5px;
+	background: white;
 }
 
 #underline2 {
-   width: 50px;
-   height: 5px;
-   background: white;
+	width: 50px;
+	height: 5px;
+	background: white;
+	transition: all ease-in-out .3s;
 }
 
 #dot {
-   width: 5px;
-   height: 5px;
-   margin-left: 5px;
-   background: white;
+	width: 5px;
+	height: 5px;
+	margin-left: 5px;
+	background: white;
 }
 
-.social {
-   display: flex;
-   justify-content: space-between;
-   align-content: center;
-   font-weight: normal;
-   font-size: 1.5rem;
-   /* background: chartreuse; */
-   width: 20%;
+.social-icon {
+	font-weight: normal;
+	font-size: 1.5rem;
+	transition: all ease-in-out .3s;
+}
+.social-icon > i {
+	transition: all ease-in-out .3s;
+	text-shadow: 1px 3px 3px rgba(255, 218, 5, 0);
+}
+.social-icon:hover > i {
+	color: #ffdb06;
+	text-shadow: 1px 5px 7px rgba(255, 218, 5, 0.5);
 }

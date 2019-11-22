@@ -4,24 +4,16 @@ font-family: 'IBM Plex Serif', serif;
 font-family: 'Yeseva One', cursive;
 font-family: 'Archivo Black', sans-serif;
 */
-header {
-   background: white;
+#navbar {
+   /* background: blue; */
    width: 100%;
-   /* margin: 1rem 5rem 1rem; */
    display: flex;
    justify-content: center;
    align-items: center;
    position: fixed;
    z-index: 1000;
    top: 0;
-}
-
-.header-wrapper {
-   width: 90%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin: 10px 0px 10px;
+   transition: all ease-in-out .3s;
 }
 
 .fa-bars {
@@ -39,60 +31,82 @@ header {
    position: fixed;
    width: 0;
    height: 0;
-   border-top-left-radius: 50%;
-   border-top-right-radius: 10%;
-   border-bottom-left-radius: 50%;
-   border-bottom-right-radius: 10%;
+   border-radius: 50% 15% 50% 50%;
    background: white;
-   top: -25%;
-   right: -15%;
+   top: 0;
+   right: 0;
    text-align: center;
+   box-shadow: rgba(0, 0, 0, 0.5) -10px 0px 50px;
+   z-index: 1000;
+   transition: all ease-in-out .3s;
    display: flex;
    justify-content: center;
    align-items: center;
-   box-shadow: rgba(0, 0, 0, 0.4) -10px 0px 50px;
-   z-index: 1000;
-   /* display: none; */
-   transition: all ease-in-out .5s;
-   -moz-transition: all ease-in-out .5s;
-   -webkit-transition: all ease-in-out .5s;
 }
-
 
 .menu-item {
-   font-size: 9rem;
-   /* background: coral; */
+   font-size: 7vw;
    font-family: 'Archivo Black', sans-serif;
    text-decoration: none;
-}
-
-.menu-items {
-   margin-right: 200px;
-   overflow: hidden;
-   visibility: hidden;
-   opacity: 0;
-   transition: all ease-in-out .5s;
-   -moz-transition: all ease-in-out .5s;
-   -webkit-transition: all ease-in-out .5s;
+   color: #231F20;
 }
 
 .menu-item:hover {
+   color: #231F20;
    text-decoration: underline #FFDB06;
 }
 
+.menu-items {
+   /* margin-right: 200px; */
+   overflow: hidden;
+   opacity: 0;
+   transition: all ease-in-out .3s;
+}
+
+
 .close-menu {
    position: fixed;
-   top: 50px;
+   top: 15px;
    right: 50px;
    cursor: pointer;
    visibility: hidden;
    opacity: 0;
-   transition: all ease-in-out .5s;
-   -moz-transition: all ease-in-out .5s;
-   -webkit-transition: all ease-in-out .5s;
+   transition: all ease-in-out .3s;
+   z-index: 1000;
 }
 
 .close-menu i {
-   font-size: 3rem;
+   font-size: 2.5rem;
    color: #231F20;
+}
+
+
+@media only screen and (max-width:600px) {
+   .menu-item {
+      font-size: 15vw;
+   }
+}
+
+@media only screen and (min-width:600px) {
+   .menu-item {
+      font-size: 12vw;
+   }
+}
+
+@media only screen and (min-width:800px) {
+   .menu-item {
+      font-size: 10vw;
+   }
+}
+
+@media only screen and (min-width:992px) {
+   .menu-item {
+      font-size: 7vw;
+   }
+}
+
+@media only screen and (min-width:2000px) {
+   .menu-item {
+      font-size: 4vw;
+   }
 }

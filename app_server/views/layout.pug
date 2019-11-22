@@ -11,56 +11,87 @@ html(lang="es")
       meta(http-equiv="X-UA-Compatible", content="ie=edge")
       title #{title}
    body
-      header
-         .header-wrapper
-            .logo
-               a(href='/')
-                  img(id='edLogo', src='/images/EDLogo.svg', alt = 'Logo')
-            .menu
-               .open-menu
-                  i.fas.fa-bars
-         .round-menu
-            .close-menu
-               i.fas.fa-times
-            .menu-items
-               a.menu-item(href="/about") ABOUT 
-               br 
-               br 
-               br 
-               br 
-               a.menu-item(href="/projects") PROJECTS 
-               br 
-               br 
-               br 
-               br
-               a.menu-item(href="/lab") LAB
+      header#navbar
+         .container-fluid
+            .row.justify-content-between.p-3
+               .col.logoED.ml-2
+                  a(href='/')
+                     img(id='edLogo', class="img-fluid", src='/images/EDLogo.svg', alt = 'Logo')
+               .col.menuED.text-right.mr-3
+                  .open-menu
+                     i.fas.fa-bars
+            .round-menu
+               .close-menu
+                  i.fas.fa-times
+               .menu-items
+                  .container.bg-sucess
+                     .d-flex.flex-column.mr-3
+                        .col
+                           a.menu-item(href="/about") ABOUT
+                        .col
+                           a.menu-item(href="/projects") PROJECTS 
+                        .col
+                           a.menu-item(href="/lab") LAB
+                  //- .container.bg-primary.menu-wrapper
+                  //-    .row
+                  //-       .col.text-center
+                  //-          ABOUT 
+                  //-    .row
+                  //-       .col.text-center
+                  //-          a.menu-item(href="/projects") PROJECTS
+                  //-    .row 
+                  //-       .col.text-center
+                  //-          a.menu-item(href="/lab") LAB
+      //- header
+      //-    .header-wrapper
+      //-       .logo
+      //-          a(href='/')
+      //-             img(id='edLogo', src='/images/EDLogo.svg', alt = 'Logo')
+      //-       .menu
+      //-          .open-menu
+      //-             i.fas.fa-bars
+      //-    .round-menu
+      //-       .close-menu
+      //-          i.fas.fa-times
+      //-       .menu-items
+      //-          a.menu-item(href="/about") ABOUT 
+      //-          a.menu-item(href="/projects") PROJECTS 
+      //-          a.menu-item(href="/lab") LAB
       block content 
+
       footer
-         //.footer
-         .footer-wrapper
-            .copyright
-               p Designed by Mr.Eagle &#129413 © 2019. All Rights Reserved.
-               .underlines
-                  #underline
-                  #dot
-            .donations
-               a( id='coffee', href='https://www.patreon.com', target = "_blank") Buy me a Coffee	&#x2615
-               .underlines
-                  #underline2
-                  #dot
-            .social
-               .behance
-                  i.fab.fa-behance
-               .dribble
-                  i.fab.fa-dribbble
-               .linkedin
-                  i.fab.fa-linkedin-in
-               .facebook
-                  i.fab.fa-facebook-f
-               .twitter
-                  i.fab.fa-twitter
-               .instagram
-                  i.fab.fa-instagram  
+         .container-fluid
+            .row.mt-3.mb-3
+               .col-sm.mt-2.mb-2
+                  p Designed by Mr.Eagle &#129413 © 2019. All Rights Reserved.
+                  .underlines
+                     #underline
+                     #dot
+               .col-sm.mt-2.mb-2
+                  a( id='coffee', href='https://www.patreon.com', target = "_blank") Buy me a Coffee	&#x2615
+                  .underlines
+                     #underline2
+                     #dot
+               .col-sm
+                  .row.justify-content-center.mt-2.mb-2
+                     .col.text-center
+                        a(class = "social-icon" href="behance.com", target = "_blank") 
+                           i.fab.fa-behance
+                     .col.text-center
+                        a(class = "social-icon" href="dribble.com", target = "_blank")
+                           i.fab.fa-dribbble
+                     .col.text-center
+                        a(class = "social-icon" href="linkedin.com", target = "_blank")
+                           i.fab.fa-linkedin-in
+                     .col.text-center
+                        a(class = "social-icon" href="instagram.com", target = "_blank")
+                           i.fab.fa-instagram  
+                     .col.text-center
+                        a(class = "social-icon" href="facebook.com", target = "_blank")
+                           i.fab.fa-facebook-f 
+                     .col.text-center
+                        a(class = "social-icon" href="twitter.com", target = "_blank")
+                           i.fab.fa-twitter  
       block scripts
       script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
       script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
