@@ -11,14 +11,14 @@ function toggleMenu() {
       roundMenuList.style.opacity = "1";
       roundMenuTimes.style.visibility = "visible";
       roundMenuTimes.style.opacity = "1";
-      roundMenu.style.width = "150vh";
-      roundMenu.style.height = "150vh";
-      roundMenu.style.top = "-25%";
-      roundMenu.style.right = "-15%";
+      roundMenu.style.width = "100vh";
+      roundMenu.style.height = "100vh";
+      roundMenu.style.top = "-100px";
+      roundMenu.style.right = "-150px";
 
       toggleMenuStatus = true;
 
-   } else if (toggleMenuStatus === true) {
+   } else {
       roundMenuList.style.visibility = "hidden";
       roundMenuList.style.opacity = "0";
       roundMenuTimes.style.visibility = "hidden";
@@ -30,9 +30,47 @@ function toggleMenu() {
       toggleMenuStatus = false;
    }
 };
-//TODO: switch between clases instead of modifyiing style in js
+
 let openButton = document.querySelector('.open-menu');
 let closeButton = document.querySelector('.close-menu');
 
 openButton.addEventListener('click', () => toggleMenu());
 closeButton.addEventListener('click', () => toggleMenu());
+
+//Scroll navbar hider
+var prevScrollpos = window.pageYOffset;
+window.onscroll = () => {
+   //sroll navbar color changer
+   const nav = document.querySelector('#navbar');
+   if (this.scrollY <= 30) {
+      nav.className = '';
+   } else {
+      nav.className = 'bg-white';
+   }
+
+   var currentScrollPos = window.pageYOffset;
+   if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+   } else {
+      document.getElementById("navbar").style.top = "-80px";
+   }
+   prevScrollpos = currentScrollPos;
+}
+
+/*FOOTER ACTIONS */
+
+var coffee = document.getElementById('coffee');
+var underline2 = document.getElementById('underline2');
+
+function isHover(e) {
+   return (e.parentElement.querySelector(':hover') === e);
+}
+document.addEventListener('mousemove', function checkHover() {
+   var hovered = isHover(coffee);
+   if (hovered !== checkHover.hovered) {
+      hovered ?
+         underline2.style.width = "75px" :
+         underline2.style.width = "50px";
+      checkHover.hovered = hovered;
+   }
+});
