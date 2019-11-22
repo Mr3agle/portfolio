@@ -5,10 +5,17 @@ const PostSchema = mongoose.Schema({
       type: String,
       required: true
    },
-   description: {
+   descriptionShort: {
       type: String,
       required: true
-   }
+   },
+   descriptionLong: {
+      type: String,
+      required: true
+   },
+   tags: [{
+      type: String
+   }]
 }, {
    timestamps: true
 });

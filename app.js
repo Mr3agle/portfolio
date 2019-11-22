@@ -1,14 +1,15 @@
+/***************** REQUIRES *******************/
 const createError = require('http-errors');
-const express = require('express');
+const express = require("express");
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-
 require('./app_server/models/db');
 
+/*************** MIDDLEWARES ******************/
 const usersRouter = require('./app_server/routes/users');
 const router = require('./app_server/routes/routes');
-const apirouter = require('./API/routes/routes');
+const apirouter = require('./api/routes/routes');
 
 const app = express();
 
@@ -24,7 +25,7 @@ app.use(express.urlencoded({
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//Middlewares
+//Route - Middlewares
 app.use('/', router);
 app.use('/api', apirouter);
 app.use('/users', usersRouter);
@@ -33,7 +34,6 @@ app.use('/users', usersRouter);
 app.use((req, res, next) => {
   next(createError(404));
 });
-
 
 // error handler
 app.use((err, req, res, next) => {
