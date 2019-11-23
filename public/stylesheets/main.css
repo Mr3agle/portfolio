@@ -8,8 +8,122 @@ font-family: 'Archivo Black', sans-serif;
 	margin: 0;
 	padding: 0;
 	color: #231f20;
+	box-sizing: border-box;
 }
 
+body {
+	overflow-x: hidden;
+}
+
+p{
+   font-family: 'IBM Plex Serif',
+   serif;
+}
+
+h4{
+   font-family: 'Yeseva One',
+   cursive;
+   font-weight: bold;
+}
+
+#panorama {
+	background-color: #003cff;
+	overflow: hidden;
+}
+
+.bigsun {
+	margin-top: 300px;
+}
+
+.text-intro {
+	position: absolute;
+	width: 100%;
+	transform: translateY(-400px);
+	font-family: 'Archivo Black', sans-serif;
+	overflow: hidden;
+}
+
+.h1mod1 {
+	font-size: 8rem;
+}
+
+.h1mod2 {
+	font-size: 4rem;
+}
+
+#projects-title {
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 5rem;
+}
+.btn-primary {
+	background-color: #003cff;
+}
+.btn-primary:hover {
+	background-color: #0031d3;
+}
+
+.btn-waning {
+	color: #ffdb06;
+}
+.btn-waning:hover {
+	color: #d3b300;
+}
+/*CARD*/
+.card {
+	border-radius: 25px;
+	margin-top: 120px;
+	height: 360px;
+}
+.img-cover {
+	width: 100%;
+	height: 100%;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all ease-in-out .3s;
+}
+.img-cover-shadow {
+	width: 100%;
+	height: 100%;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.card:hover .img-cover,
+.card:focus .img-cover {
+	transform: scale(1.1);
+}
+
+.card:hover .card-shadow,
+.card:focus .card-shadow {
+	opacity: 1;
+}
+
+.card-img-top {
+	border-radius: 25px;
+	overflow: hidden;
+	height: 200px;
+	width: 90%;
+	position: absolute;
+	top: -100px;
+	left: 16px;
+	transition: all ease-in-out .3s;
+	z-index: 2;
+}
+.card-shadow {
+	border-radius: 25px;
+	overflow: hidden;
+	height: 200px;
+	width: 80%;
+	position: absolute;
+	top: -90px;
+	left: 31px;
+	transition: all ease-in-out .3s;
+	filter: blur(15px);
+	opacity: 0;
+}
+
+/******/
 /*FOOTER*/
 footer {
 	position: relative;
@@ -28,7 +142,9 @@ footer {
 
 footer p,
 i {
-	color: white;
+   color: white;
+   font-family: 'Montserrat',
+   sans-serif;
 }
 
 #coffee {
@@ -36,6 +152,7 @@ i {
 	color: white;
 	transition: all ease-in-out .3s;
 }
+
 /* #coffee:hover {
 	color: #ffdb06;
 } */
@@ -57,6 +174,12 @@ i {
 	transition: all ease-in-out .3s;
 }
 
+#underline3 {
+	width: 25vw;
+	height: 10px;
+	background: #ffdb06;
+}
+
 #dot {
 	width: 5px;
 	height: 5px;
@@ -68,11 +191,14 @@ i {
 	font-weight: normal;
 	font-size: 1.5rem;
 	transition: all ease-in-out .3s;
+	text-decoration: none;
 }
+
 .social-icon > i {
 	transition: all ease-in-out .3s;
 	text-shadow: 1px 3px 3px rgba(255, 218, 5, 0);
 }
+
 .social-icon:hover > i {
 	color: #ffdb06;
 	text-shadow: 1px 5px 7px rgba(255, 218, 5, 0.5);

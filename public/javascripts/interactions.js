@@ -15,7 +15,6 @@ function toggleMenu() {
       roundMenu.style.height = "100vh";
       roundMenu.style.top = "-100px";
       roundMenu.style.right = "-150px";
-
       toggleMenuStatus = true;
 
    } else {
