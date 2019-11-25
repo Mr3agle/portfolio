@@ -1,17 +1,22 @@
 extends layout
 block content
-   .about-main
-      img(src="/images/About-1.svg", alt="about")
-   .about-title
-      h1 #{mainTitle}
-   
-   .history1
-      h2 #{history1}
-   .history2
-      h2 #{history2} <br/> perseverancia y tenacidad. 
-   .history3
-      h2 #{history3} <br/> de lo que cualquier otra ave. 
-   .history4
-      h2 #{history4} <br/> en estos principios, <br/> de modo que ve más allá <br/> de lo que todos pueden.
-   .history5
-      h1 #{history5} <br/> #{history6}
+   .container-fluid.panorama
+      .row.mt-5
+         .col
+            h1#main-title-dark #{mainTitle}
+            .underlines
+               #underlineAbout
+      .row.mb-5
+         .col-sm
+            img.img-fluid.histogram(src="/images/Clouds-History.svg", alt="alt")
+      .history-text#history1
+         h2 !{history1}
+      .history-text#history2
+         h2 !{history2}
+      .history-text#history3
+         h2 !{history3}  
+      .history-text#history4
+         h2 !{history4}
+      .row
+         .col-sm.text-center
+            h1#inspiration !{history5}

@@ -1,7 +1,7 @@
 extends layout
 block content
    section
-      .container-fluid#panorama
+      .container-fluid.panorama
          .row
             .col-sm
                img.img-fluid.bigsun(src="/images/Panorama.svg", alt="alt")
@@ -67,4 +67,24 @@ block content
                      i.fas.fa-eye
          
 
-      .container.mt-5
+      .container.mt-5.mb-5.pt-5.pb-5
+         .row
+            .col-sm-3.text-center
+               a(href="")
+                  h3.hashtag #Todos
+               //- TODO: Make it a link
+            .col-sm-3.text-center
+               h3.hashtag #Ilustracion
+            .col-sm-3.text-center
+               h3.hashtag #WebDevelopment
+            .col-sm-3.text-center
+               h3.hashtag #3D
+            .col-sm-3.text-center
+               h3.hashtag #Photoshop
+            .col-sm-3.text-center
+               h3.hashtag #MotionGraphics
+            .col-sm-3.text-center
+               h3.hashtag #Apps
+            .col-sm-3.text-center
+               h3.hashtag #AudioTracks
+

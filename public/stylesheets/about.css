@@ -1,0 +1,72 @@
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Yeseva One', cursive;
+font-family: 'Archivo Black', sans-serif;
+*/
+
+.histogram {
+   margin-top: 200px;
+}
+
+#main-title-dark {
+   font-family: 'Archivo Black', sans-serif;
+   color: white;
+   font-size: 5rem;
+   margin-top: 5rem;
+   margin-left: 5rem;
+}
+
+#underlineAbout {
+   width: 15vw;
+   height: 10px;
+   background: #ffdb06;
+   margin-left: 5rem;
+}
+
+.history-text {
+   position: absolute;
+   color: white !important;
+   font-size: 5vw;
+   z-index: 100;
+   left: 250px;
+}
+
+.history-text h2 {
+   color: white;
+   font-size: 4vw;
+   z-index: 100;
+   font-family: 'Yeseva One',
+      cursive;
+}
+
+
+#history1 {
+   top: 450px;
+}
+
+#history2 {
+   top: 1000px;
+}
+
+#history2 {
+   top: 1000px;
+}
+
+#history3 {
+   top: 1350px;
+}
+
+#history4 {
+   top: 2100px;
+}
+
+#inspiration {
+   color: white;
+   font-size: 7vw;
+   z-index: 100;
+   font-family: 'Montserrat',
+      sans-serif;
+   margin-top: 400px;
+   margin-bottom: 400px;
+}
