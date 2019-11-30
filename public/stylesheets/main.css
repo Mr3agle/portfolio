@@ -4,6 +4,278 @@ font-family: 'IBM Plex Serif', serif;
 font-family: 'Yeseva One', cursive;
 font-family: 'Archivo Black', sans-serif;
 */
+
+/*RESPONSIVE*/
+@media only screen and (max-width:600px) {
+	.menu-item {
+		font-size: 14vw;
+	}
+
+	.bigsun {
+		margin-top: 500px;
+	}
+
+	.text-intro {
+		transform: translateY(-600px);
+	}
+
+	.h1mod1 {
+		font-size: 6rem;
+	}
+
+	.h1mod2 {
+		font-size: 2.4rem;
+	}
+
+	#projects-title {
+		font-size: 3rem;
+	}
+
+	#underline3 {
+		width: 75vw;
+	}
+
+	.histogram {
+		margin-top: 100px;
+	}
+
+	#main-title-dark {
+		font-family: 'Archivo Black', sans-serif;
+		color: white;
+		font-size: 3rem;
+		margin-top: 5rem;
+		margin-left: 1rem;
+	}
+
+	#underlineAbout {
+		width: 25vw;
+		margin-left: 1rem;
+	}
+
+	.history-text {
+		left: 75px;
+		position: absolute;
+	}
+
+	#history1 {
+		top: 305px;
+	}
+
+	#history2 {
+		top: 425px;
+	}
+
+	#history3 {
+		top: 500px;
+	}
+
+	#history4 {
+		top: 665px;
+	}
+
+	#inspiration {
+		font-size: 10vw;
+		margin-top: 200px;
+		margin-bottom: 300px;
+	}
+
+	#soy-mreagle {
+		font-size: 2rem;
+	}
+
+	.aboutme {
+		margin-top: 100px;
+		margin-bottom: 50px;
+	}
+
+	#about-text {
+		font-size: 1rem;
+	}
+
+	.knowledge i {
+		font-size: 8vw;
+		margin-top: 10px;
+	}
+
+	.about-social>i {
+		font-size: 1rem;
+	}
+
+}
+
+@media only screen and (min-width:600px) {
+	.menu-item {
+		font-size: 12vw;
+	}
+
+	.bigsun {
+		margin-top: 300px;
+	}
+
+	.text-intro {
+		transform: translateY(-300px);
+	}
+
+	.h1mod1 {
+		font-size: 6rem;
+	}
+
+	.h1mod2 {
+		font-size: 3rem;
+	}
+
+	#projects-title {
+		font-size: 5rem;
+	}
+
+	#underline3 {
+		width: 70vw;
+	}
+
+	.histogram {
+		margin-top: 150px;
+	}
+
+	#main-title-dark {
+		font-family: 'Archivo Black', sans-serif;
+		color: white;
+		font-size: 5rem;
+		margin-top: 5rem;
+		margin-left: 1rem;
+	}
+
+	#underlineAbout {
+		width: 20vw;
+		margin-left: 1rem;
+	}
+
+	.history-text {
+		left: 150px;
+		position: absolute;
+	}
+
+	#history1 {
+		top: 400px;
+	}
+
+	#history2 {
+		top: 665px;
+	}
+
+	#history3 {
+		top: 840px;
+	}
+
+	#history4 {
+		top: 1200px;
+	}
+
+	#inspiration {
+		font-size: 10vw;
+		margin-top: 300px;
+		margin-bottom: 500px;
+	}
+
+	.aboutme {
+		margin-top: 200px;
+		margin-bottom: 50px;
+	}
+
+	#about-text {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (min-width:800px) {
+	.menu-item {
+		font-size: 10vw;
+	}
+
+	.text-intro {
+		transform: translateY(-400px);
+	}
+
+	.h1mod1 {
+		font-size: 8rem;
+	}
+
+	.h1mod2 {
+		font-size: 4rem;
+	}
+
+	#projects-title {
+		font-size: 5rem;
+		margin-left: 5rem;
+	}
+
+	#underline3 {
+		width: 30vw;
+		margin-left: 5rem;
+	}
+
+	.histogram {
+		margin-top: 150px;
+	}
+
+	#main-title-dark {
+		font-family: 'Archivo Black', sans-serif;
+		color: white;
+		font-size: 7rem;
+		margin-top: 5rem;
+		margin-left: 5rem;
+	}
+
+	#underlineAbout {
+		width: 12vw;
+		margin-left: 5rem;
+	}
+
+	.history-text {
+		left: 250px;
+		position: absolute;
+	}
+
+	#history1 {
+		top: 450px;
+	}
+
+	#history2 {
+		top: 1000px;
+	}
+
+	#history3 {
+		top: 1350px;
+	}
+
+	#history4 {
+		top: 2100px;
+	}
+
+	#inspiration {
+		font-size: 7vw;
+		margin-top: 400px;
+		margin-bottom: 700px;
+	}
+
+	.aboutme {
+		margin-top: 300px;
+		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (min-width:992px) {
+	.menu-item {
+		font-size: 5vw;
+	}
+}
+
+@media only screen and (min-width:2000px) {
+	.menu-item {
+		font-size: 4vw;
+	}
+}
+
+/*RESPONSIVE*/
 * {
 	margin: 0;
 	padding: 0;
@@ -22,6 +294,34 @@ p {
 h4 {
 	font-family: 'Yeseva One', cursive;
 	font-weight: bold;
+}
+
+.valid-tooltip {
+	background: rgba(0, 60, 255, 0.75);
+}
+
+looks {
+	color: white;
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid {
+	border-color: #003cff;
+	background-image: none;
+}
+
+.invalid-tooltip {
+	background: rgb(255, 8, 209, .75);
+}
+
+please {
+	color: white;
+}
+
+.form-control.is-valid,
+.was-validated .form-control:invalid {
+	border-color: #FF08D1;
+	background-image: none;
 }
 
 .panorama {
@@ -142,81 +442,3 @@ h4 {
 }
 
 /******/
-/*FOOTER*/
-footer {
-	position: relative;
-	bottom: 0;
-	color: white;
-	width: 100%;
-	background: #003cff;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-	font-size: 1.1rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-}
-
-footer p,
-i {
-	color: white;
-	font-family: 'Montserrat', sans-serif;
-}
-
-#coffee {
-	text-decoration: none;
-	color: white;
-	transition: all ease-in-out .3s;
-}
-
-/* #coffee:hover {
-	color: #ffdb06;
-} */
-.underlines {
-	display: flex;
-	margin-top: 5px;
-}
-
-#underline {
-	width: 150px;
-	height: 5px;
-	background: white;
-}
-
-#underline2 {
-	width: 50px;
-	height: 5px;
-	background: white;
-	transition: all ease-in-out .3s;
-}
-
-#underline3 {
-	width: 25vw;
-	height: 10px;
-	background: #ffdb06;
-}
-
-#dot {
-	width: 5px;
-	height: 5px;
-	margin-left: 5px;
-	background: white;
-}
-
-.social-icon {
-	font-weight: normal;
-	font-size: 1.5rem;
-	transition: all ease-in-out .3s;
-	text-decoration: none;
-}
-
-.social-icon>i {
-	transition: all ease-in-out .3s;
-	text-shadow: 1px 3px 3px rgba(255, 218, 5, 0);
-}
-
-.social-icon:hover>i {
-	color: #ffdb06;
-	text-shadow: 1px 5px 7px rgba(255, 218, 5, 0.5);
-}

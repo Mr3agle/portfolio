@@ -12,13 +12,13 @@ font-family: 'Archivo Black', sans-serif;
 #main-title-dark {
    font-family: 'Archivo Black', sans-serif;
    color: white;
-   font-size: 5rem;
+   font-size: 7rem;
    margin-top: 5rem;
    margin-left: 5rem;
 }
 
 #underlineAbout {
-   width: 15vw;
+   width: 10vw;
    height: 10px;
    background: #ffdb06;
    margin-left: 5rem;
@@ -36,10 +36,8 @@ font-family: 'Archivo Black', sans-serif;
    color: white;
    font-size: 4vw;
    z-index: 100;
-   font-family: 'Yeseva One',
-      cursive;
+   font-family: 'Yeseva One', cursive;
 }
-
 
 #history1 {
    top: 450px;
@@ -49,9 +47,6 @@ font-family: 'Archivo Black', sans-serif;
    top: 1000px;
 }
 
-#history2 {
-   top: 1000px;
-}
 
 #history3 {
    top: 1350px;
@@ -65,8 +60,197 @@ font-family: 'Archivo Black', sans-serif;
    color: white;
    font-size: 7vw;
    z-index: 100;
-   font-family: 'Montserrat',
-      sans-serif;
+   font-family: 'Montserrat', sans-serif;
    margin-top: 400px;
-   margin-bottom: 400px;
+   margin-bottom: 600px;
+}
+
+#mreagle-pic {
+   position: absolute;
+   z-index: 150;
+   /* top: 50%; */
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+#soy-mreagle {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 5rem;
+   margin-bottom: 50px;
+}
+
+.aboutme {
+   margin-top: 300px;
+   margin-bottom: 300px;
+}
+
+#about-text {
+   font-size: 2rem;
+
+}
+
+.knowledge i {
+   color: rgb(204, 204, 204);
+   font-size: 5vw;
+}
+
+#html5,
+#css3,
+#sass,
+#node,
+#laravel,
+#vue {
+   transition: all ease-in-out .3s;
+}
+
+#html5:hover {
+   color: #F16529;
+   text-shadow: 1px 5px 10px rgba(241, 101, 41, 0.5);
+}
+
+#css3:hover {
+   color: rgb(69, 127, 252);
+   text-shadow: 1px 5px 10px rgb(69, 127, 252, 0.5);
+}
+
+#sass:hover {
+   color: rgb(205, 109, 147);
+   text-shadow: 1px 5px 10px rgb(205, 109, 147, 0.5);
+}
+
+#node:hover {
+   color: #3C873A;
+   text-shadow: 1px 5px 10px rgb(48, 48, 48, 0.5);
+
+}
+
+#laravel:hover {
+   color: rgb(240, 83, 64);
+   text-shadow: 1px 5px 10px rgb(240, 83, 64, 0.5);
+
+}
+
+#vue:hover {
+   color: #34495E;
+   /* background-color: rgb(65, 185, 131); */
+   text-shadow: 1px 5px 10px rgb(65, 185, 131, 0.7);
+
+}
+
+#contactme {
+   font-family: 'Yeseva One', cursive;
+}
+
+.about-social>i {
+   color: #231F20;
+   font-size: 2rem;
+}
+
+#social-underline {
+   width: 0px;
+   height: 5px;
+   background: #ffdb06;
+   transition: all ease-in-out .3s;
+}
+
+.about-social:hover #social-underline {
+   width: 50px;
+}
+
+#send-btn {
+   width: 100px;
+   height: 100px;
+   background: #ffdb06;
+   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+   border-radius: 50%;
+   border-style: none;
+   transition: all ease-in-out .2s;
+}
+
+#send-btn:hover {
+   transform: translateY(-5px);
+   cursor: pointer;
+   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.16);
+}
+
+#send-btn>i {
+   color: #231F20;
+   font-size: 3rem;
+}
+
+input,
+textarea {
+   font-family: 'IBM Plex Serif', serif;
+   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+   resize: none;
+   font-size: 1rem;
+}
+
+textarea#validationTooltip05 {
+   padding: 25px;
+   box-sizing: border-box;
+}
+
+.form-control {
+   border-color: transparent;
+   border-radius: 1rem;
+   height: 65px;
+   margin-top: 25px;
+   margin-bottom: 15px;
+   position: relative;
+}
+
+.tooltip-transform {
+   position: absolute;
+   transform: translate(15px, -60px);
+   z-index: 100;
+   transition: all ease-in-out .2s;
+   font-family: 'IBM Plex Serif',
+      serif;
+   color: #A3A3A3;
+}
+
+.invalid-tooltip {
+   transform: translate(10px, -15px);
+}
+
+.form-control:focus {
+   border-color: #003CFF;
+   box-shadow: none;
+}
+
+input:focus+.tooltip-transform,
+input:valid+.tooltip-transform {
+   transform: translate(15px, -90px);
+   border-color: #003CFF;
+   color: #003CFF;
+   font-size: .8rem;
+   background: white;
+   border-radius: 5rem;
+   padding-right: 5px;
+   padding-left: 5px;
+}
+
+input:focus,
+input:valid,
+textarea:focus,
+textarea:valid {
+   border-color: #003CFF;
+   background: white;
+}
+
+.special-label {
+   transform: translate(15px, -165px);
+}
+
+textarea:focus+.tooltip-transform,
+textarea:valid+.tooltip-transform {
+   transform: translate(10px, -197px);
+   border-color: #003CFF;
+   color: #003CFF;
+   font-size: .8rem;
+   background: white;
+   border-radius: 5rem;
+   padding-right: 10px;
+   padding-left: 10px;
 }
