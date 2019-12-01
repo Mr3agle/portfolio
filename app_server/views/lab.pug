@@ -1,5 +1,26 @@
 extends layout
 
 block content
-  h1 #{title}
-  p Welcome to #{title}
+  .container-fluid.panorama
+        .row.mt-5
+          .col
+              h1#main-title-dark #{mainTitle}
+              .underlines
+                #underlineAbout
+        .row.mb-5
+         .col-sm
+            img.lab-clouds(src="/images/lab-clouds.svg", alt="alt")
+  .introtext.text-center
+    h2 !{introtext}
+  
+  .container-fluid.bg-dark
+    .row
+      .col#codepen
+        br
+        br
+        br
+        br
+        br
+        br
+
+        h1 Hello World

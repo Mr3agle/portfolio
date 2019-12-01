@@ -47,8 +47,21 @@ font-family: 'Archivo Black', sans-serif;
 		margin-left: 1rem;
 	}
 
+	#main-title-light {
+		font-family: 'Archivo Black', sans-serif;
+		color: #231F20;
+		font-size: 3rem;
+		margin-top: 5rem;
+		margin-left: 1rem;
+	}
+
 	#underlineAbout {
 		width: 25vw;
+		margin-left: 1rem;
+	}
+
+	#underlineProjects {
+		width: 51vw;
 		margin-left: 1rem;
 	}
 
@@ -101,6 +114,18 @@ font-family: 'Archivo Black', sans-serif;
 		font-size: 1rem;
 	}
 
+	.introtext {
+		top: 275px;
+	}
+
+	.introtext h2 {
+		font-size: 1rem;
+	}
+
+	.lab-clouds {
+		top: -50px;
+	}
+
 }
 
 @media only screen and (min-width:600px) {
@@ -144,8 +169,21 @@ font-family: 'Archivo Black', sans-serif;
 		margin-left: 1rem;
 	}
 
+	#main-title-light {
+		font-family: 'Archivo Black', sans-serif;
+		color: #231F20;
+		font-size: 5rem;
+		margin-top: 5rem;
+		margin-left: 1rem;
+	}
+
 	#underlineAbout {
 		width: 20vw;
+		margin-left: 1rem;
+	}
+
+	#underlineProjects {
+		width: 40vw;
 		margin-left: 1rem;
 	}
 
@@ -183,6 +221,10 @@ font-family: 'Archivo Black', sans-serif;
 
 	#about-text {
 		font-size: 1.5rem;
+	}
+
+	.introtext {
+		top: 350px;
 	}
 }
 
@@ -225,8 +267,21 @@ font-family: 'Archivo Black', sans-serif;
 		margin-left: 5rem;
 	}
 
+	#main-title-light {
+		font-family: 'Archivo Black', sans-serif;
+		color: #231F20;
+		font-size: 7rem;
+		margin-top: 5rem;
+		margin-left: 5rem;
+	}
+
 	#underlineAbout {
 		width: 12vw;
+		margin-left: 5rem;
+	}
+
+	#underlineProjects {
+		width: 30vw;
 		margin-left: 5rem;
 	}
 
@@ -261,6 +316,10 @@ font-family: 'Archivo Black', sans-serif;
 		margin-top: 300px;
 		margin-bottom: 50px;
 	}
+
+	.introtext {
+		top: 500px;
+	}
 }
 
 @media only screen and (min-width:992px) {
@@ -276,6 +335,11 @@ font-family: 'Archivo Black', sans-serif;
 }
 
 /*RESPONSIVE*/
+
+html {
+	scroll-behavior: smooth;
+}
+
 * {
 	margin: 0;
 	padding: 0;

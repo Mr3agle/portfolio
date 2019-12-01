@@ -1,0 +1,30 @@
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Yeseva One', cursive;
+font-family: 'Archivo Black', sans-serif;
+*/
+
+.introtext {
+   position: absolute;
+   top: 500px;
+   left: 50%;
+   right: 50%;
+   transform: translate(-50%, -50%);
+   width: 80%;
+}
+
+.introtext h2 {
+   font-family: 'Montserrat', sans-serif;
+   color: white;
+   font-size: 4vw;
+   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+   font-weight: lighter;
+}
+
+.lab-clouds {
+   position: relative;
+   top: -100px;
+   width: 125%;
+   transform: translateX(-10%);
+}
