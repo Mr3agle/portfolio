@@ -1,0 +1,14 @@
+extends layout
+
+block content
+   .container-fluid.projects-main
+      .row.mt-5
+         .col
+            h1#main-title-light #{mainTitle}
+            h2= post.descriptionShort
+            h3= post.descriptionLong
+            if post.link != null
+               a(href= post.link, target = "_blank") 
+                  h4= post.link
+            else
+               h4 no link for this post

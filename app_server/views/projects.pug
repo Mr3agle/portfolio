@@ -1,6 +1,8 @@
 extends layout
 
 block content
+  //- VARIABLES
+  - var works = posts;
   .container-fluid.projects-main
       .row.mt-5
          .col
@@ -36,54 +38,57 @@ block content
   section
     .container-fluid#latest-projects.mb-5
         .row.justify-content-around.mt-5
-          .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
+          each post in works
+            .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
               .card-img-top
                 .img-cover(style="background-image: url('/images/projects/pr1-cover.jpg')")
               .card-shadow
                 .img-cover-shadow(style="background-image: url('/images/projects/pr1-cover.jpg')")
               .card-body(style="margin-top: 120px")
-                h4.card-title.text-center Proyecto 1
-                p.card-text.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                h4.card-title.text-center= post.title
+                p.card-text.text-center= post.descriptionShort
               .text-right.p-1
-                a.btn.btn-primary.m-2(href="")
+                a.btn.btn-primary.m-2(href="show/" + post._id)
                     i.fas.fa-eye
+          else
+            h4.text-center(style="margin-top:150px; margin-bottom:150px;") Todavía no se ha publicado nada :c
 
-          .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
-              .card-img-top
-                .img-cover(style="background-image: url('/images/projects/pr2-cover.jpg')")
-              .card-shadow
-                .img-cover-shadow(style="background-image: url('/images/projects/pr2-cover.jpg')")
-              .card-body(style="margin-top: 120px")
-                h4.card-title.text-center Proyecto 2
-                p.card-text.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              .text-right.p-1
-                a.btn.btn-primary.m-2(href="")
-                    i.fas.fa-eye
+          //- .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
+          //-     .card-img-top
+          //-       .img-cover(style="background-image: url('/images/projects/pr2-cover.jpg')")
+          //-     .card-shadow
+          //-       .img-cover-shadow(style="background-image: url('/images/projects/pr2-cover.jpg')")
+          //-     .card-body(style="margin-top: 120px")
+          //-       h4.card-title.text-center Proyecto 2
+          //-       p.card-text.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          //-     .text-right.p-1
+          //-       a.btn.btn-primary.m-2(href="")
+          //-           i.fas.fa-eye
 
-          .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
-              .card-img-top
-                .img-cover(style="background-image: url('/images/projects/pr3-cover.png')")
-              .card-shadow
-                .img-cover-shadow(style="background-image: url('/images/projects/pr3-cover.png')")
-              .card-body(style="margin-top: 120px")
-                h4.card-title.text-center Proyecto 3
-                p.card-text.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              .text-right.p-1
-                a.btn.btn-primary.m-2(href="")
-                    i.fas.fa-eye
+          //- .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
+          //-     .card-img-top
+          //-       .img-cover(style="background-image: url('/images/projects/pr3-cover.png')")
+          //-     .card-shadow
+          //-       .img-cover-shadow(style="background-image: url('/images/projects/pr3-cover.png')")
+          //-     .card-body(style="margin-top: 120px")
+          //-       h4.card-title.text-center Proyecto 3
+          //-       p.card-text.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          //-     .text-right.p-1
+          //-       a.btn.btn-primary.m-2(href="")
+          //-           i.fas.fa-eye
           
-          .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
-              .card-img-top
-                .img-cover(style="background-image: url('/images/projects/pr4-cover.png')")
-              .card-shadow
-                .img-cover-shadow(style="background-image: url('/images/projects/pr4-cover.png')")
-              .card-body(style="margin-top: 120px")
-                h4.card-title.text-center Proyecto 4
-                p.card-text.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                //-max-length: 125
-              .text-right.p-1
-                a.btn.btn-primary.m-2(href="")
-                    i.fas.fa-eye
+          //- .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
+          //-     .card-img-top
+          //-       .img-cover(style="background-image: url('/images/projects/pr4-cover.png')")
+          //-     .card-shadow
+          //-       .img-cover-shadow(style="background-image: url('/images/projects/pr4-cover.png')")
+          //-     .card-body(style="margin-top: 120px")
+          //-       h4.card-title.text-center Proyecto 4
+          //-       p.card-text.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          //-       //-max-length: 125
+          //-     .text-right.p-1
+          //-       a.btn.btn-primary.m-2(href="")
+          //-           i.fas.fa-eye
         
 block scripts
   script.

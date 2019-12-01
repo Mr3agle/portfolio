@@ -23,13 +23,7 @@ let getById = async (req, res) => {
 
 /****************** POST REQUESTS *****************************/
 let postContent = async (req, res) => {
-   const post = new Post({
-      title: req.body.title,
-      descriptionShort: req.body.descriptionShort,
-      descriptionLong: req.body.descriptionLong,
-      tags: req.body.tags
-   });
-
+   const post = new Post(req.body);
    try {
       const postSaved = await post.save();
       response(res, 201, postSaved);
@@ -49,7 +43,8 @@ let updtadeContent = async (req, res) => {
             title: req.body.title,
             descriptionShort: req.body.descriptionShort,
             descriptionLong: req.body.descriptionLong,
-            tags: req.body.tags
+            category: req.body.category,
+            link: req.body.link
          }
       });
       res.status(200).json(postUpdated);

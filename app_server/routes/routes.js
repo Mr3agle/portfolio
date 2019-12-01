@@ -7,14 +7,19 @@ const labController = require('../controllers/labController');
 
 /* GET home page. */
 router.get('/', indexController.index);
-router.get('/projects/all', projectsController.index);
+router.get('/projects/all', projectsController.getContent);
+
+router.get('/projects/new-post', projectsController.newContent);
+router.post('/projects/new-post', projectsController.postContent);
+
+router.get('/projects/show/:id', projectsController.getById);
 router.get('/projects/illustrations', projectsController.getIllustrations);
-router.get('/projects/web-development', projectsController.getIllustrations);
-router.get('/projects/3D-modeling', projectsController.getIllustrations);
-router.get('/projects/photo', projectsController.getIllustrations);
-router.get('/projects/motion-graphics', projectsController.getIllustrations);
-router.get('/projects/apps', projectsController.getIllustrations);
-router.get('/projects/audiotracks', projectsController.getIllustrations);
+router.get('/projects/web-development', projectsController.getWeb);
+router.get('/projects/3D-modeling', projectsController.getModeling);
+router.get('/projects/photo', projectsController.getPhoto);
+router.get('/projects/motion-graphics', projectsController.getMotion);
+router.get('/projects/apps', projectsController.getApps);
+router.get('/projects/audiotracks', projectsController.getAudio);
 router.get('/about', aboutController.index);
 router.get('/lab', labController.index);
 

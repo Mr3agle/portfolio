@@ -13,9 +13,13 @@ const PostSchema = mongoose.Schema({
       type: String,
       required: true
    },
-   tags: [{
+   category: {
+      type: String,
+      required: true
+   },
+   link: {
       type: String
-   }]
+   }
 }, {
    timestamps: true
 });

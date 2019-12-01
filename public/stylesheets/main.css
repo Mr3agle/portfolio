@@ -318,7 +318,7 @@ font-family: 'Archivo Black', sans-serif;
 	}
 
 	.introtext {
-		top: 500px;
+		top: 525px;
 	}
 }
 
@@ -338,6 +338,28 @@ font-family: 'Archivo Black', sans-serif;
 
 html {
 	scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #ffdb03;
+	border-radius: 10px;
+	transition: all ease-in-out .2s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #FF08D1;
 }
 
 * {
