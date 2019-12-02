@@ -17,54 +17,54 @@ block content
                .underlines
                   #underline3
          .row.justify-content-around.mt-5
-            .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
-               .card-img-top
-                  .img-cover(style="background-image: url('/images/projects/pr1-cover.jpg')")
-               .card-shadow
-                  .img-cover-shadow(style="background-image: url('/images/projects/pr1-cover.jpg')")
-               .card-body(style="margin-top: 120px")
-                  h4.card-title.text-center Proyecto 1
-                  p.card-text.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               .text-right.p-1
-                  a.btn.btn-primary.m-2(href="")
-                     i.fas.fa-eye
+            each post in posts
+               .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
+                  .card-img-top
+                     .img-cover(style="background-image: url('/images/projects/pr1-cover.jpg')")
+                  .card-shadow
+                     .img-cover-shadow(style="background-image: url('/images/projects/pr1-cover.jpg')")
+                  .card-body(style="margin-top: 120px")
+                     h4.card-title.text-center #{post.title}
+                     p.card-text.text-center #{post.descriptionShort}
+                  .text-right.p-1
+                     a.btn.btn-primary.m-2(href="/projects/show/" + post._id)
+                        i.fas.fa-eye
 
-            .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
-               .card-img-top
-                  .img-cover(style="background-image: url('/images/projects/pr2-cover.jpg')")
-               .card-shadow
-                  .img-cover-shadow(style="background-image: url('/images/projects/pr2-cover.jpg')")
-               .card-body(style="margin-top: 120px")
-                  h4.card-title.text-center Proyecto 2
-                  p.card-text.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               .text-right.p-1
-                  a.btn.btn-primary.m-2(href="")
-                     i.fas.fa-eye
+            //- .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
+            //-    .card-img-top
+            //-       .img-cover(style="background-image: url('/images/projects/pr2-cover.jpg')")
+            //-    .card-shadow
+            //-       .img-cover-shadow(style="background-image: url('/images/projects/pr2-cover.jpg')")
+            //-    .card-body(style="margin-top: 120px")
+            //-       h4.card-title.text-center Proyecto 2
+            //-       p.card-text.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            //-    .text-right.p-1
+            //-       a.btn.btn-primary.m-2(href="")
+            //-          i.fas.fa-eye
 
-            .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
-               .card-img-top
-                  .img-cover(style="background-image: url('/images/projects/pr3-cover.png')")
-               .card-shadow
-                  .img-cover-shadow(style="background-image: url('/images/projects/pr3-cover.png')")
-               .card-body(style="margin-top: 120px")
-                  h4.card-title.text-center Proyecto 3
-                  p.card-text.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               .text-right.p-1
-                  a.btn.btn-primary.m-2(href="")
-                     i.fas.fa-eye
+            //- .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
+            //-    .card-img-top
+            //-       .img-cover(style="background-image: url('/images/projects/pr3-cover.png')")
+            //-    .card-shadow
+            //-       .img-cover-shadow(style="background-image: url('/images/projects/pr3-cover.png')")
+            //-    .card-body(style="margin-top: 120px")
+            //-       h4.card-title.text-center Proyecto 3
+            //-       p.card-text.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            //-    .text-right.p-1
+            //-       a.btn.btn-primary.m-2(href="")
+            //-          i.fas.fa-eye
            
-            .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
-               .card-img-top
-                  .img-cover(style="background-image: url('/images/projects/pr4-cover.png')")
-               .card-shadow
-                  .img-cover-shadow(style="background-image: url('/images/projects/pr4-cover.png')")
-               .card-body(style="margin-top: 120px")
-                  h4.card-title.text-center Proyecto 4
-                  p.card-text.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  //-max-length: 125
-               .text-right.p-1
-                  a.btn.btn-primary.m-2(href="")
-                     i.fas.fa-eye
+            //- .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
+            //-    .card-img-top
+            //-       .img-cover(style="background-image: url('/images/projects/pr4-cover.png')")
+            //-    .card-shadow
+            //-       .img-cover-shadow(style="background-image: url('/images/projects/pr4-cover.png')")
+            //-    .card-body(style="margin-top: 120px")
+            //-       h4.card-title.text-center Proyecto 4
+            //-       p.card-text.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            //-    .text-right.p-1
+            //-       a.btn.btn-primary.m-2(href="")
+            //-          i.fas.fa-eye
          
 
       .container.mt-5.mb-5.pt-5.pb-5

@@ -41,12 +41,12 @@ block content
           each post in works
             .card.border-0.d-flex.justify-content-center.shadow(style="width:20rem")
               .card-img-top
-                .img-cover(style="background-image: url('/images/projects/pr1-cover.jpg')")
+                .img-cover(style="background-image: url('/images/projects/pr2-cover.jpg')")
               .card-shadow
                 .img-cover-shadow(style="background-image: url('/images/projects/pr1-cover.jpg')")
               .card-body(style="margin-top: 120px")
-                h4.card-title.text-center= post.title
-                p.card-text.text-center= post.descriptionShort
+                h4.card-title.text-center #{post.title}
+                p.card-text.text-center #{post.descriptionShort}
               .text-right.p-1
                 a.btn.btn-primary.m-2(href="show/" + post._id)
                     i.fas.fa-eye

@@ -4,6 +4,14 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+//file upload
+const multer = require('multer');
+const sharp = require('sharp')
+const storage = require('./upload-config')
+const upload = multer(storage)
+const fs = require('fs')
+
+//models
 require('./app_server/models/db');
 
 /*************** MIDDLEWARES ******************/
