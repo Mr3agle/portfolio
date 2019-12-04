@@ -1,14 +1,29 @@
 extends layout
+block xtra-style
+   style(type="text/css").
+      .injected a{
+         font-family: 'Yeseva One', cursive;
+         font-size: 2rem;
+         color: #231F20;
+         border-bottom: 5px;
 
+         text-decoration-color: #ffdb06;
+      }
+      
 block content
-   .container-fluid.projects-main
-      .row.mt-5
+   .container-fluid.projects-main.my-3
+      .row
          .col
             h1#main-title-light #{mainTitle}
-            h2= post.descriptionShort
-            h3= post.descriptionLong
+            .underlines
+               #underlineAbout
+   .container
+      .row
+         .col-sm.text-center
+            img.img-fluid.my-5.rounded.shadow-lg(src=post.image)
+            p.h5.text-center.mt-5 #{post.descriptionLong}
+            hr.my-5
             if post.link != null
-               a(href= post.link, target = "_blank") 
-                  h4= post.link
+              p.text-center.my-5.injected !{post.link}
             else
                h4 no link for this post

@@ -16,6 +16,7 @@ module.exports.postContent = async (req, res) => {
       res.status(400).json(error);
    }
 }
+
 module.exports.newContent = async (req, res) => {
    res.status(200).render("post", {
       message: ""
